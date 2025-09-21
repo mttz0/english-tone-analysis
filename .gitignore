@@ -1,0 +1,36 @@
+# Python compiled files and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments and environment files
+venv/
+env/
+.venv/
+.env
+
+# IDE and editor configuration files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system generated files
+.DS_Store
+Thumbs.db
+*~
+
+# Jupyter notebook checkpoint files
+.ipynb_checkpoints/
+
+# Temporary files and directories
+temp/
+tmp/
+*.tmp
+
+# Compressed archive files
+*.zip
+*.tar.gz
