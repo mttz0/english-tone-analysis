@@ -29,18 +29,37 @@ flowchart LR
 
 ## 🚀 Installazione
 
-Assicurati di avere **Python** installato.  
+Assicurati di avere installato **Python 3.9 o superiore**  
+(Puoi scaricarlo dalla [pagina ufficiale di Python](https://www.python.org/downloads/)).
+
+Il progetto utilizza **PyTorch** come libreria principale.  
+Poiché l’installazione di PyTorch dipende dal sistema operativo e dal supporto GPU/CPU, è consigliabile seguire le [istruzioni ufficiali di PyTorch](https://pytorch.org/get-started/locally/) per scegliere il comando più adatto al tuo ambiente.
+
+### Installazione
 
 ```bash
-# Creazione venv
+# 1️⃣ Creazione e attivazione di un ambiente virtuale
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate   # (Windows: venv\Scripts\activate)
 
-# Opzione A) Installazione da requirements.txt
+# 2️⃣ Installazione di PyTorch
+# Segui le istruzioni ufficiali per il tuo sistema operativo e hardware
+# Esempio: Mac con supporto MPS (Apple Silicon)
+pip install torch torchvision
+
+# 3️⃣ Installazione di numpy e matplotlib:
+pip install numpy matplotlib
+```
+
+In alternativa, per installare tutte le dipendenze elencate in `requirements.txt` e riprodurre l'ambiente di sviluppo (MacBook Pro M4):
+
+```bash
+# 1️⃣ Creazione e attivazione di un ambiente virtuale
+python3 -m venv venv
+source venv/bin/activate   # (Windows: venv\Scripts\activate)
+
+# 2️⃣ Installazione di tutte le dipendenze
 pip install -r requirements.txt
-
-# Opzione B) Installazione manuale dei pacchetti
-pip install torch numpy matplotlib
 ```
 
 
