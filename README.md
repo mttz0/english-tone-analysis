@@ -185,7 +185,7 @@ Checkpoint salvato in: /Users/matteo/english-tone-analysis/checkpoints/sentiment
 
 Per valutare il modello, è necessario eseguire il seguente comando:
 ```bash
-python predict.py ["text1", "text2", "text3"]
+python predict.py ['text1', 'text2', 'text3']
 ```
 
 Nel caso non si passi uno o più input, lo script utilizzerà i seguenti esempi di default:
